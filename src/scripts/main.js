@@ -7,6 +7,6 @@ myImage.onclick = () => {
   if (mySrc === 'mypic.jpg') {
     myImage.setAttribute('src','myimg2.jpg');
   } else {
-    myImage.setAttribute('src','mypic.jpg);
+    myImage.setAttribute('src','mypic.jpg');
   }
 }
