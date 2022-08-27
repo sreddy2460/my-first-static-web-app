@@ -2,10 +2,19 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 500px;
+  max-height: 500px;
   position: relative;
   margin: auto;
 }
+
+.img{
+  
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit: contain;
+
+}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -28,14 +37,7 @@
   user-select: none;
 }
 
-.img{
-   width:200px;
-   height:200px;
 
-/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-    object-fit:scale-down;
-
-}
 /* Position the "next button" to the right */
 .next {
   right: 0;
