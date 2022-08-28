@@ -1,6 +1,16 @@
 const myHeading = document.querySelector('h1');
 const myImage = document.querySelector('img');
 const heroimage = document.getElementById('heropic');
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 
 myHeading.textContent = 'Welcome to Santhosh World .... ';
 myImage.onclick = () => {
