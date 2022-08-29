@@ -121,6 +121,12 @@ header a {
   display: none;
   text-align: center;
 }
+
+#loadingtext {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
 /* Add everything below here */
 
 #hero {
