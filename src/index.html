@@ -33,13 +33,7 @@
             <img id="heropic" src="car.jpg" class="profile-img">
             <h1>Hi, I'm Santhosh.</h1>
             <p>Loading content from the API: <b id="name">...</b></p>
-            <script>
-              (async function() {
-                const { text } = await( await fetch(`/api/message?name=santhosh&ID=123`)).json();
-                document.querySelector('#name').textContent = text;
-            }())
-            </script>
-          </div>
+           </div>
         </section>
         <section id="about">
           <div class="section-inner">
