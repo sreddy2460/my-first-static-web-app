@@ -8,7 +8,10 @@ function myFunction() {
 }
 
 async function myazureapi() {
-  const { text } = await( await fetch(`/api/message?name=santhoshKAUSHIK&ID=123`)).json();
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const name = urlParams.get('name')
+  const { text } = await( await fetch(`/api/message?name={name}&ID=123`)).json();
   document.querySelector('#name').textContent = text;
 }
 
