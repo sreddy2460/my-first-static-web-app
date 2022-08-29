@@ -8,10 +8,10 @@ function myFunction() {
 }
 
 function showPage() {
+  const { text } = await( await fetch(`/api/message?name=santhoshkaushik&ID=123`)).json();
   document.getElementById("loader").style.display = "none";
   document.getElementById("loadingtext").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
-  const { text } = await( await fetch(`/api/message?name=santhoshkaushik&ID=123`)).json();
   document.querySelector('#name').textContent = text;
 }
 
