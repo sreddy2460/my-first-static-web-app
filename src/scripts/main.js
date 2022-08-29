@@ -14,7 +14,8 @@ function showPage() {
 }
 
 function myFunction2() {
-  document.querySelector('#name').textContent = "this is with the API";
+  const { text } = await( await fetch(`/api/message`)).json();
+  document.querySelector('#name').textContent = text;
 }
 
 myHeading.textContent = 'Welcome to my page ';
