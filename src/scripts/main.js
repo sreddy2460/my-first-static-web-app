@@ -18,6 +18,7 @@ function myFunction2() {
   document.querySelector('#name').textContent = text;
 }
 
+
 myHeading.textContent = 'Welcome to my page ';
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute('src');
