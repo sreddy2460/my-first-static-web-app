@@ -7,12 +7,19 @@ function myFunction() {
   myVar = setTimeout(showPage, 3000);
 }
 
+async function myazureapi() {
+  const { text } = await( await fetch(`/api/message?name=santhoshKAUSHIK&ID=123`)).json();
+  document.querySelector('#name').textContent = text;
+}
+
+myazureapi();
+
 function showPage() {
-  const { text } = await( await fetch(`/api/message?name=santhoshkaushik&ID=123`)).json();
+  
   document.getElementById("loader").style.display = "none";
   document.getElementById("loadingtext").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
-  document.querySelector('#name').textContent = text;
+
 }
 
 function myFunction2() {
