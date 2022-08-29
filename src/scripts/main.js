@@ -13,7 +13,7 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
-myHeading.textContent = 'Welcome to Santhosh World .... ';
+myHeading.textContent = 'Welcome to my page ';
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute('src');
   if (mySrc === 'mypic.jpg') {
