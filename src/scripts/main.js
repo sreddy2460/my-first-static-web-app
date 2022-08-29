@@ -13,6 +13,11 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
+function myFunction2() {
+  const { text } = await( await fetch(`/api/message`)).json();
+  document.querySelector('#name').textContent = text;
+}
+
 myHeading.textContent = 'Welcome to my page ';
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute('src');
