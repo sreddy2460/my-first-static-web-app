@@ -14,8 +14,7 @@ function showPage() {
 }
 
 function myFunction2() {
-  const { text } = await( await fetch(`/api/message`)).json();
-  document.querySelector('#name').textContent = text;
+  document.querySelector('#name').textContent = "is it here " ;
 }
 
 
