@@ -11,7 +11,7 @@ async function myazureapi() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const name = urlParams.get('name')
-  const { text } = await( await fetch(`/api/message?name=${name}&ID=123`)).json();
+  const { text } = await( await fetch(`https://santhosh-fn-app.azurewebsites.net/api/message?name=${name}&ID=123`)).json();
   document.querySelector('#name').textContent = text;
 }
 
