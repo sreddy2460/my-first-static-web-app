@@ -85,7 +85,14 @@
           </div>
         </section>
       </main>
-      <footer> © Copyright santhosh </footer>
+      <div id="map" style="width:100%;height:400px"></div>
+      <script src="https://apis.mapmyindia.com/advancedmaps/v1/b52e0c6bc98dd6e57431c5df626371ff/map_load?v=01"></script>
+      <script>
+             var map = new MapmyIndia.Map('map', {center: [28.549948, 77.268241], zoomControl: true,
+               hybrid: true});
+      </script>   
+     
+      <footer> © Copyright Santhosh </footer>
     </div>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
