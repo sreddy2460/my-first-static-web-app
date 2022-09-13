@@ -1,4 +1,4 @@
-const myHeading = document.querySelector('h1');
+const myHeading = document.querySelector('h2');
 const myImage = document.querySelector('img');
 const heroimage = document.getElementById('heropic');
 var myVar;
