@@ -36,10 +36,10 @@ myImage.onclick = () => {
   if (mySrc === 'mypic.jpg') {
     myImage.setAttribute('src','myimg2.jpg');
     heroimage.setAttribute('src','myimg2.jpg');
-    myHeading.textContent = 'Welcome to Kaushik Page .... ';
+    myHeading.textContent = 'Welcome ....  Kaushik  ';
   } else {
     myImage.setAttribute('src','mypic.jpg');
     heroimage.setAttribute('src','mypic.jpg');
-    myHeading.textContent = 'Welcome to My Page .... ';
+    myHeading.textContent = 'Welcome to Santhosh .... ';
   }
 }
