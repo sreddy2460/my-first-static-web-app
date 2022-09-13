@@ -88,11 +88,6 @@ header a {
   border-left: 16px solid pink;
 }
 
-#map {
-    text-align:center;
-    width:50%;
-    height:400px
-}
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -143,9 +138,14 @@ header a {
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
 }
 
-#contact {
+#contactdiv {
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
     float:right;
     width:50%;
     height:400px;
+}
+#map {
+    text-align:center;
+    width:50%;
+    height:400px
 }
