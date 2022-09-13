@@ -75,7 +75,7 @@
           </div>
         </section>
         <section id="contact">
-          <div class="section-inner">
+          <div id="contactdiv">
             <h2>Contact me</h2>
             <p>You can find me on:</p>
             <ul>
@@ -85,14 +85,14 @@
             </ul>
             <p>Or, you can <a href="mailto:santhoshreddy@gmail.com">send me an email</a>. </p>
           </div>
+          <div id="map"></div>
+          <script src="https://apis.mapmyindia.com/advancedmaps/v1/b52e0c6bc98dd6e57431c5df626371ff/map_load?v=01"></script>
+          <script>
+                 var map = new MapmyIndia.Map('map', {center: [28.549948, 77.268241], zoomControl: true,
+                   hybrid: true});
+          </script>  
         </section>
       </main>
-      <div id="map"></div>
-      <script src="https://apis.mapmyindia.com/advancedmaps/v1/b52e0c6bc98dd6e57431c5df626371ff/map_load?v=01"></script>
-      <script>
-             var map = new MapmyIndia.Map('map', {center: [28.549948, 77.268241], zoomControl: true,
-               hybrid: true});
-      </script>   
      
       <footer> © Copyright Santhosh </footer>
     </div>
